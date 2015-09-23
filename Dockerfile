@@ -12,6 +12,9 @@ ENV JAVA_RPM jdk-7u79-linux-x64.rpm
 ENV WLS_PKG wls1036_generic.jar
 ENV JAVA_HOME /usr/java/default
     
+#install wget
+RUN yum -y install wget
+
 # Setup required packages (unzip), filesystem, and oracle user
 # ------------------------------------------------------------
 RUN mkdir /u01 && \
