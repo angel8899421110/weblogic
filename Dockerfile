@@ -19,7 +19,7 @@ RUN mkdir /u01 && \
     useradd -b /u01 -m -s /bin/bash oracle 
     
 ADD https://mirror.its.sfu.ca/mirror/CentOS-Third-Party/NSG/common/x86_64/jdk-7u79-linux-x64.rpm /u01/jdk-7u79-linux-x64.rpm
-RUN wget --no-check-certificate --content-disposition "https://googledrive.com/host/0B8N4NF6Fi1ZuWFhwdE02U0s3WVk" -O  /u01/wls1036_generic.jar
+RUN wget --no-check-certificate --content-disposition "https://googledrive.com/host/0B8N4NF6Fi1ZuWFhwdE02U0s3WVk" -O /u01/wls1036_generic.jar
 # Copy packages
 #COPY /soft/$WLS_PKG /u01/
 #COPY $JAVA_RPM /u01/
